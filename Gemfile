@@ -61,6 +61,13 @@ gem 'pg'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'devise'
 gem 'doorkeeper'
-gem 'cancancan'
 gem 'whenever', require: false
 gem 'faraday'
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'vcr'
+  gem 'webmock', require: 'webmock/rspec'
+  gem 'timecop'
+end
