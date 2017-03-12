@@ -32,6 +32,6 @@ class ApplicationService
     raise 'not implemented'
   end
 
-  def failure_callbck
+  def failure_callback
   end
 end
